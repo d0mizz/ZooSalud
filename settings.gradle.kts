@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Veterinaria_Walter_6_8"
+rootProject.name = "ZooSalud_new"
 include(":app")
  

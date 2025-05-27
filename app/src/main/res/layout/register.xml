@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="355dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="81dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Registrate"
+        android:textColor="#154519"
+        android:textSize="35.5sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="-12sp"
+        android:autofillHints=""
+        android:background="@drawable/textbg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="nombre de usuario"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="16dp"
+        android:autofillHints=""
+        android:background="@drawable/textbg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:autofillHints=""
+        android:background="@drawable/textbg"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="contraseña"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="13sp"
+        android:background="@drawable/textbg"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:text="registrarse"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

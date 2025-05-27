@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8DB4A0"
+    android:id="@+id/main_container">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:id="@+id/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="#8DB4A0"
+        android:padding="24dp">
+
+        <!-- Menu Icon -->
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_menu"
+            android:tint="@android:color/white" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_icon"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="PROBLEMAS\nINICIANDO SESIÓN?"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:id="@+id/content_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/dog_background"
+        >
+        <!-- Overlay for better text readability -->
+
+        <!-- Lock Icon Container -->
+
+        <RelativeLayout
+            android:id="@+id/lock_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:id="@+id/lock_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_lock"
+                android:tint="@android:color/white"
+                android:background="@drawable/security_background"
+                android:backgroundTint="@color/white"
+                android:padding="25"/>
+
+        </RelativeLayout>
+
+        <!-- Problem Title -->
+        <TextView
+            android:id="@+id/problem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="¿Problemas con tu cuenta?"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Problem Description -->
+
+        <!-- Email Input Field -->
+        <TextView
+            android:id="@+id/problem_description"
+            android:layout_width="296dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:lineSpacingExtra="2dp"
+            android:text="Tenemos nuestro equipo para que esté listo para atender tu problema.\nIngresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña."
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_background_for_enythihg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999" />
+
+        <!-- Change Password Button -->
+        <Button
+            android:id="@+id/change_password_btn"
+            android:layout_width="318dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_background_for_enythihg"
+            android:backgroundTint="#303030"
+            android:text="Cambiar contraseña"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Spacer -->
+        <View
+            android:id="@+id/spacer_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="#8DB4A0"
+            android:orientation="vertical"
+            android:padding="12dp">
+            <!-- Back to Login Button -->
+            <Button
+                android:id="@+id/back_to_login_btn"
+                android:layout_width="187dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rounded_background_for_enythihg"
+                android:backgroundTint="#303030"
+                android:text="Volver a la página de inicio de sesión"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

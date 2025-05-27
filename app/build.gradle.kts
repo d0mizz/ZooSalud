@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.veterinaria_walter_6_8"
+    namespace = "com.zoosalud.zoosalud_new"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.veterinaria_walter_6_8"
-        minSdk = 35
+        applicationId = "com.zoosalud.zoosalud_new"
+        minSdk = 25
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
