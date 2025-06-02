@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6D5C6">
+
+    <!-- ENCABEZADO -->
+    <LinearLayout
+        android:layout_width="435dp"
+        android:layout_height="56dp"
+        android:gravity="center_vertical|space_between"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+
+        <!-- Icono menú -->
+        <ImageView
+            android:id="@+id/btnLogo"
+            android:layout_width="95dp"
+            android:layout_height="65dp"
+            android:src="@drawable/_a1a008d_b600_4379_9c46_2f07437596a6" />
+
+        <!-- Íconos lado derecho -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="164dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnUsuario"
+                android:layout_width="36dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/descarga" />
+
+            <ImageView
+                android:id="@+id/btnCarrito"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/descarga__5_" />
+
+            <ImageView
+                android:id="@+id/btnNotificaciones"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/descarga__7_" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- BARRA DE BÚSQUEDA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#DDE9DE"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:layout_width="393dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="Buscar"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- LISTADO DE PRODUCTOS -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- FILA DE PRODUCTOS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="12dp">
+
+                <!-- Producto 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="257dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="163dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/images__5_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text=" RICOCAN Cachorros Carne y Leche Bolsa 3Kg"
+                        android:textColor="#000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="S/ 28.50"
+                        android:textColor="#007F5F"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|space_between"
+                        android:layout_marginTop="12dp">
+
+                        <!-- Botón "-" y cantidad -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <Button
+                                android:id="@+id/btnMenos"
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:backgroundTint="#E57373"
+                                android:text="-"
+                                android:textColor="#FFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <!-- Precio y botón "+" al lado derecho -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <Button
+                                android:id="@+id/btnMas"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:backgroundTint="#81C784"
+                                android:textColor="#FFFFFF" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="#447A6F"
+                        android:text="Comprar"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF" />
+
+                </LinearLayout>
+
+
+                <!-- Producto 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="256dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/images__2_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Comida Húmeda  Ricocan Adultos Sabor Carne 330 g"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="S/ 8.50"
+                        android:textColor="#007F5F"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|space_between"
+                        android:layout_marginTop="12dp">
+
+                        <!-- Botón "-" y cantidad -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <Button
+                                android:id="@+id/btnMenos"
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:backgroundTint="#E57373"
+                                android:text="-"
+                                android:textColor="#FFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <!-- Precio y botón "+" al lado derecho -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <Button
+                                android:id="@+id/btnMas"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:backgroundTint="#81C784"
+                                android:textColor="#FFFFFF" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="#447A6F"
+                        android:text="Comprar"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- FILA DE PRODUCTOS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="12dp">
+
+                <!-- Producto 1 -->
+
+                <!-- Producto 2 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="259dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="90dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/images__3_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Alimento Seco para Perro"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="S/ 61.90"
+                        android:textColor="#007F5F"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical|space_between"
+                        android:orientation="horizontal">
+
+                        <!-- Botón "-" y cantidad -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnMenos"
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:backgroundTint="#E57373"
+                                android:text="-"
+                                android:textColor="#FFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <!-- Precio y botón "+" al lado derecho -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnMas"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:backgroundTint="#81C784"
+                                android:text="+"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="#447A6F"
+                        android:text="Comprar"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="258dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/_011874_natural_dog_adulto_22kg_510__1_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Natural Dog Adulto 22kg Con Contenedor"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="S/29.50"
+                        android:textColor="#007F5F"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical|space_between"
+                        android:orientation="horizontal">
+
+                        <!-- Botón "-" y cantidad -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnMenos"
+                                android:layout_width="40dp"
+                                android:layout_height="35dp"
+                                android:backgroundTint="#E57373"
+                                android:text="-"
+                                android:textColor="#FFF"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <!-- Precio y botón "+" al lado derecho -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnMas"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:backgroundTint="#81C784"
+                                android:text="+"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:backgroundTint="#447A6F"
+                        android:text="Comprar"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Precio -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="S/500.60"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Botón Buy Now -->
+                <LinearLayout
+                    android:layout_width="38dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/_567808"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="6dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
